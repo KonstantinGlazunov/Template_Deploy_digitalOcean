@@ -67,7 +67,7 @@ public class UsersService {
 
 
     private String createLinkConfirmation(String codeValue) {
-        return baseurl + "api/users/confirm.html?id=" + codeValue;
+        return baseurl + "api/users/confirm/" + codeValue;
     }
 
     private void saveConfirmCode(String codeValue, User user) {
@@ -120,5 +120,5 @@ public class UsersService {
 
         return UserDto.from(user);
     }
-
+  
 }
