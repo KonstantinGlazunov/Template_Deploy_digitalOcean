@@ -67,7 +67,7 @@ public class UsersService {
 
 
     private String createLinkConfirmation(String codeValue) {
-        return baseurl + "confirm.html?id=" + codeValue;
+        return baseurl + "/confirm.html?id=" + codeValue;
     }
 
     private void saveConfirmCode(String codeValue, User user) {
