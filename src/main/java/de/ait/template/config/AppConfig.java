@@ -48,6 +48,7 @@ public class AppConfig {
         return amazonS3ClientBuilder.build();
     }
 
+    @Value("${spring.datasource.url}")
 
     @Bean
     public PasswordEncoder passwordEncoder() {
