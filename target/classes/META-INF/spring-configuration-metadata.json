@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "s3",
+      "type": "de.ait.template.config.S3ConfigurationProperties",
+      "sourceType": "de.ait.template.config.S3ConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "s3.access-key",
+      "type": "java.lang.String",
+      "sourceType": "de.ait.template.config.S3ConfigurationProperties"
+    },
+    {
+      "name": "s3.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "de.ait.template.config.S3ConfigurationProperties"
+    },
+    {
+      "name": "s3.region",
+      "type": "java.lang.String",
+      "sourceType": "de.ait.template.config.S3ConfigurationProperties"
+    },
+    {
+      "name": "s3.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "de.ait.template.config.S3ConfigurationProperties"
+    }
+  ],
+  "hints": []
+}
