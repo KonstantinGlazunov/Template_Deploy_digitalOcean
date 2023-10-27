@@ -29,6 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DisplayName("Endpoint /users is works:")
 @DisplayNameGeneration(value = DisplayNameGenerator.ReplaceUnderscores.class)
 @ActiveProfiles("test")
+
 public class UsersIntegrationTest {
 
     @Autowired
