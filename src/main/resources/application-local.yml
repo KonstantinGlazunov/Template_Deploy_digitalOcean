@@ -17,6 +17,11 @@ spring:
           starttls:
             enable: true
 
+  servlet:
+    multipart:
+      max-file-size: 10GB
+
+
 logging:
   level:
     org:

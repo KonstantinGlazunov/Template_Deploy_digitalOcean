@@ -49,6 +49,7 @@ public class FileService {
 
         ObjectMetadata metadata = new ObjectMetadata();
         metadata.setContentType(file.getContentType());
+        metadata.setContentLength(file.getSize());
         PutObjectRequest request =
                 new PutObjectRequest("ait-tr-base", "images/" + fileNewName, inputStream, metadata)
                         .withCannedAcl(CannedAccessControlList.PublicRead); // разрешаем доступ к файлу;

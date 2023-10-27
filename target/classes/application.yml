@@ -3,19 +3,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-#    properties:
-#      hibernate:
-#        format_sql: true
+  #    properties:
+  #      hibernate:
+  #        format_sql: true
   mail:
     host: smtp.gmail.com
     port: 587
     properties:
       mail:
-#        debug: true
+        #        debug: true
         smtp:
           auth: true
           starttls:
             enable: true
+  servlet:
+    multipart:
+      max-file-size: 10GB
 
 #logging:
 #  level:
