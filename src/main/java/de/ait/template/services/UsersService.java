@@ -74,7 +74,7 @@ public class UsersService {
         ConfirmationCode code = ConfirmationCode.builder()
                 .code(codeValue)
                 .user(user)
-                .expiredDateTime(LocalDateTime.now().plusMinutes(1))
+                .expiredDateTime(LocalDateTime.now().plusMinutes(10))
                 .build();
         confirmationCodsRepository.save(code);
     }
@@ -120,5 +120,5 @@ public class UsersService {
 
         return UserDto.from(user);
     }
-  
+
 }
